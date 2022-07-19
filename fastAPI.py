@@ -15,7 +15,7 @@ app = FastAPI()
 
 @app.get('/')
 def home():
-    return{'text' :'Price prediction of Hoses'}
+    return{'text' :'Price prediction of Houses'}
 
 @app.get('/predict')
 def predict(
