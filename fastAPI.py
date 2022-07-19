@@ -31,7 +31,7 @@ def predict(
     Distance_to_SanJose: int,
     Distance_to_SanFrancisco:int):
     
-    model = pickle.load(open("C:\\Users\\venki\\OneDrive\\Desktop\\Datascience360\\House\\reg_model.pkl","rb"))
+    model = pickle.load(open("reg_model.pkl","rb"))
     
     makeprediction = model.predict([[Median_Income, Median_Age, Tot_Rooms,
                 Tot_Bedrooms, Population, Households, Distance_to_coast, Distance_to_LA,
